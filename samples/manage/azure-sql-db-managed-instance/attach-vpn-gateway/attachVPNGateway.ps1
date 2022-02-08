@@ -235,7 +235,7 @@ $virtualNetwork = LoadVirtualNetwork -resourceGroupName $resourceGroupName -virt
 
 $subnets = $virtualNetwork.Subnets.Name
 
-$gatewaySubnetName = "GatewaySubnet02"
+$gatewaySubnetName = "LocalGtwaySubnet01"
 
 If ($false -eq $subnets.Contains($gatewaySubnetName)) {
     Write-Host "$gatewaySubnetName is not one of the subnets in $subnets" -ForegroundColor Yellow
